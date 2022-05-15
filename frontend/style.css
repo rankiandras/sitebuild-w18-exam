@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
+}
+a{
+  text-decoration: none;
+}
+a img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+textarea,
+select {
+  appearance: none !important;
+  border-radius: 0;
+}
+
+/* End of css reset */
+
+
+#root {
+  max-width: 1200px;
+  margin: auto;
+  background-color: #ffeedf;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 60px;
+  font-family: 'Space Grotesk', sans-serif;
+  color: #145434;
+  font-weight: 700;
+  border-bottom: solid 1px #145434;
+  margin-bottom: 60px;
+}
+
+
+#caption {
+  font-size: 36px;
+}
+
+#headerIcon {
+  font-size: 36px;
+}
+
+#beerCards {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-column-gap: 60px;
+  grid-row-gap: 60px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 950px) {
+  #beerCards {
+    grid-template-columns: auto;
+    grid-column-gap: 100px;
+  }
+}
+
+
+.card {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  background-color: #145434;
+  color: #ffeedf;
+  text-align: left;
+  font-family: 'Space Grotesk', sans-serif;
+  padding: 0 40px;
+}
+
+/* @media screen and (max-width: 950px) {
+  .card {
+  }
+} */
+
+
+
+.number {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  background-color: #ffeedf;
+  color:#145434;
+  border: solid 3px #145434;
+  border-radius: 50%;
+  text-align: center;
+  left: -22px;
+  top: -22px;
+}
+
+.numP {
+  transform: translateY(2px);
+}
+
+
+.title {
+  font-size: 36px;
+  font-weight: 400;
+  padding: 35px 0;
+  border-bottom: 2px solid #ffeedf;
+}
+
+.sub, .text {
+  font-size: 18px;
+}
+
+.sub {
+  margin-top: 10px;
+}
+
+.text {
+  font-weight: 700;
+}
+
+button {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background-color: #ffeedf;
+  color: #145434;
+  border: solid 3px #145434;
+  right: -10px;
+  bottom: -10px;
+  padding-right: 5px;
+}
+
+
+
+button:hover {
+  background-color: #145434;
+  color: #ffeedf;
+  border: solid 3px #ffeedf;
+}
+
+#arrowIcon {
+  font-size: 36px;
+  margin-left: 35px;
+}
+
+.details {
+  font-size: 14px;
+  font-weight: 400;
+}
